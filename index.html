@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Form</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.cdnfonts.com/css/shantell-sans" rel="stylesheet">
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <table>
+                <tr>
+                    <td><label for="firstname">First Name</label></td>
+                    <td><input type="text" placeholder="Ex:THOMAS" required>
+                    <p>Enter your First Name</p></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="surname">Surname</label></td>
+                    <td> <input type="text" placeholder="Ex:T" optional>
+                    <p>Enter Your Surname</p></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Mobile Number</label></td>
+                    <td><input type="tel" placeholder="Ex:9012808211" required>
+                    <p>Enter you Phone Number</p></td>
+                </tr>
+                <tr>
+                    <td> <label for="email">Email</label></td>
+                    <td><input type="email" placeholder="Ex:thomas@gmail.com" required>
+                    <img src="/correct.png" alt="Error" class="correct"height="15px" width="15px">
+                    <img src="/wrong.png" alt="Error" height="15px" width="15px" class="wrong"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" placeholder="min 8 characters" required>
+                    <p>Enter your password</p></td>
+                </tr>
+                <tr>
+                    <td><label for="confirmpassword">Confirm Password</label></td>
+                    <td> <input type="password" placeholder="min 8 characters" required>
+                    <p>Re-enter Password</p></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" placeholder="" required>
+                    <p>Enter Date of Birth</p></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td><input type="number" min="0" max="120" required>
+                    <img src="/correct.png" alt="Error" class="correct"height="15px" width="15px">
+                    <img src="/wrong.png" alt="Error" height="15px" width="15px" class="wrong"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><input type="radio" name="gender" value="male"><label>Male</label>
+                    <input type="radio" name="gender" value="female"><label>Female</label>
+                    <input type="radio" name="gender" value="other"><label>Other</label></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td>
+                        <select name="country" >
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="China">China</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="picture">Upload Picture</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Course Details</legend>
+            <table>
+                <tr>
+                    <td><label for="course">Select Course</label></td>
+                </tr>
+                <tr>
+                    <td><select name="course" >
+                        <option value="pythonfullstack">Python Full Stack</option>
+                        <option value="javafullstack">Java FullStack</option>
+                        <option value="mernstack">Mern Stack</option>
+                        <option value="aiml">AIML</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="mode">Delivery Mode</label></td>
+                    <td>
+                        <input type="radio" name="mode" value="Online"><label>ONLINE</label>
+                        <input type="radio" name="mode" value="Offline"><label>OFFLINE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="institue">Institute Name:</label></td>
+                    <td><input type="text" name="tap" value="TAP ACADEMY"></td>
+                </tr>
+                <tr>
+                    <td>Comments</td>
+                </tr>
+            </table>
+            <textarea name="comment" cols="50" rows="5" ></textarea>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
